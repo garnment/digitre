@@ -16,3 +16,4 @@ $router->get('/', 'MainController@showWidgets');
 
 /* Page settings */
 $router->get('/settings','MainController@showSettings');
+$router->post('/settings/update','MainController@updateSettings');

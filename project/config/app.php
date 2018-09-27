@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Zjango\Laracurl\LaracurlServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         //
 
@@ -229,6 +230,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Laracurl'	=>	Zjango\Laracurl\Facades\Laracurl::class,
 
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        
         /* Custom */
         'Widget' => App\Helpers\WidgetHelper\Widget::class
     ],

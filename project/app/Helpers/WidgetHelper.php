@@ -2,6 +2,7 @@
 namespace App\Helpers\WidgetHelper;
 
 use App\Models\WidgetModel as WidgetModel;
+use Collective\Html\FormFacade as Form;
 
 class WidgetHelper
 {
@@ -42,6 +43,20 @@ class WidgetHelper
 
         return $start.$content.$end;
     }
+
+    /**
+     *
+     */
+    public static function createWidgetForm($widget){
+
+        $id = Form::hidden('id[]', $widget->id);
+        $name = Form::label('type_'.$widget->id, $widget->name);
+        $enableCheck = Form::checkbox('check', $widget->enable, $widget->enable, array('id' => 'type_'.$widget->id));
+        $enable = Form::hidden('enable[]', $widget->enable, array('id' => 'type_'.$widget->id.'_enable'));
+
+        return $id.$name.$enableCheck.$enable;
+    }
+
 
     /**
      * @param bool $active

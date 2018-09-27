@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts._main')
 
 @section('title', $title)
 
@@ -6,5 +6,6 @@
     @foreach ( $widgets as $widget )
         {!!  $widget !!}
     @endforeach
-@endsection('title')
+@endsection
 
+@section('css', 'css/widgets.css')
