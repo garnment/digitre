@@ -5,3 +5,23 @@ h1 {
 img.logo {
     max-height: 65px;
 }
+
+
+._brown {
+    background-color: #DD8500;
+}
+
+._green {
+    background-color: #28B779;
+}
+
+._yellow {
+    background-color: #F9DE20;
+}
+._red {
+    background-color: #D25226;
+}
+
+._blue {
+    background-color: #1B98CD;
+}

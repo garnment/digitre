@@ -1,6 +1,6 @@
 @extends('layouts.main')
-
 @section('title', $title)
+@section('css', 'css/widgets.css')
 
 @section('content')
     <div class="row">
@@ -10,4 +10,3 @@
     </div>
 @endsection
 
-@section('css', 'css/widgets.css')

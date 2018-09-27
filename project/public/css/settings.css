@@ -1,0 +1,13 @@
+legend {
+    font-size: 1.1em;
+    line-height: normal;
+}
+
+.type {
+    float: left;
+    display: block;
+    height: 5px;
+    width: 13px;
+}
+
+

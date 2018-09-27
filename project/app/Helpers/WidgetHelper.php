@@ -53,12 +53,17 @@ class WidgetHelper
      */
     public static function createWidgetForm($widget){
 
-        $id = Form::hidden('id[]', $widget->id);
-        $name = Form::label('type_'.$widget->id, $widget->name);
-        $enableCheck = Form::checkbox('check', $widget->enable, $widget->enable, array('id' => 'type_'.$widget->id));
+        $id = '<div class="type '.$widget->type.'"></div>'.Form::hidden('id[]', $widget->id);
+
+        $enableCheck = '<div class="form-group form-check">'
+            .Form::checkbox('check', $widget->enable, $widget->enable,
+                array('id' => 'type_'.$widget->id, 'class' => 'form-check-input'));
+
+        $name = Form::label('type_'.$widget->id, $widget->name, array('class' => 'form-check-label')).'</div>';
+
         $enable = Form::hidden('enable[]', $widget->enable, array('id' => 'type_'.$widget->id.'_enable'));
 
-        return $id.$name.$enableCheck.$enable;
+        return $id.$enableCheck.$name.$enable;
     }
 
 
