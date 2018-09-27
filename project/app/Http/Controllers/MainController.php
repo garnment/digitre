@@ -43,7 +43,7 @@ class MainController extends Controller
         $widgets = [];
 
         foreach ($widgetsActifs as $widget) {
-            $w = WidgetHelper::createWidget($meteo, $widget->type);
+            $w = WidgetHelper::createWidget($meteo, $widget);
             $widgets[] = $w;
         }
 

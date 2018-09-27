@@ -1,95 +1,128 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+
 <head>
     <meta charset="utf-8">
-    <title>Weather Dashboard - @yield('title')</title>
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <title>Weather Dashboard - @yield('title')</title>
 
-    <!--Google Font link-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/swiper.min.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/iconfont.css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/bootsnav.css"/>
-
-
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="css/style.min.css" rel="stylesheet">
 
     <!-- Open Weather Map -->
     <link rel="stylesheet" href="css/weather-icons.min.css"/>
 
-    <link rel="stylesheet" href="css/style.css"/>
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="@yield('css')"/>
 
-
-    <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".navbar-collapse">
+<body>
 
-    <!-- Preloader -->
-    <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_four"></div>
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+
+
+<div id="main-wrapper">
+
+    <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header" data-logobg="skin5">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+
+
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
+                </ul>
+                <a class="navbar-brand" href="/">
+                    <img src="../images/logo.png" alt="digitRE" class="logo" />
+                </a>
+                <h1>Weather Dashboard </h1>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav" class="p-t-30">
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false"><i class="mdi mdi-widgets"></i><span class="hide-menu">Widgets</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/settings" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Settings</span></a></li>
+                   </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+
+
+    <div class="page-wrapper">
+
+        <div class="page-breadcrumb">
+            <div class="row">
+                <div class="col-12 d-flex no-block align-items-center">
+                    <h2 class="page-title">@yield('title')</h2>
+                </div>
             </div>
         </div>
-    </div><!--End Preloader -->
 
-    <div class="container text-center">
-        <h1 class="text-light">
-            Weather Dashboard
-        </h1>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>@yield('content')</div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
     </div>
 
-        <nav class="navbar navbar-default bootsnav navbar-fixed white no-background">
+</div>
 
-                  <!-- Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                </div>
-                <!-- End Navigation -->
-
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-center">
-                        <li><a href="/">Widgets</a></li>
-                        <li><a href="/settings">Settings</a></li>
-                    </ul>
-                </div>
-            <div class="clearfix"></div>
-        </nav>
-
-
-        <section class="home">
-            <div class="main_home">
-                <h1 class="text-white col-md-3">@yield('title')</h1>
-                <div class="col-md-9">@yield('content')</div>
-            </div>
-        </section>
-
-    <!-- JS includes -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/jquery.collapse.js"></script>
-    <script src="js/bootsnav.js"></script>
-
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/perfect-scrollbar.jquery.min.js"></script>
+<script src="js/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="js/custom.min.js"></script>
     <script src=@yield('scripts')></script>
 
 </body>

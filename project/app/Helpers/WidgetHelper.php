@@ -13,33 +13,37 @@ class WidgetHelper
      * @param $model
      * @return string
      */
-    public static function createWidget($meteo, $model){
+    public static function createWidget($meteo, $widget){
 
-        $start = '<div class="icon-wrap"><i class="'.$meteo->icon.'"></i>'
-               . ''.$meteo->city.''
-               . ''.$meteo->temp.'°';
+        $lg=2;
 
-        $content = self::_medium();
-        $end = '</div>';
-
-
-        switch ($model) {
-            case '_small' :
-                $content = self::_small();
+        switch ($widget->type) {
+            case '_brown' :
+                $lg = 2;
                 break;
-            case '_medium' :
-                $content = self::_medium();
+            case '_green' :
+                $lg = 4;
                 break;
-            case '_large' :
-                $content = self::_large();
+            case '_yellow' :
+                $lg = 2;
                 break;
-            case '_vertical' :
-                $content = self::_vertical();
+            case '_red' :
+                $lg =3;
                 break;
-            case '_horizontal' :
-                $content = self::_horizontal();
+            case '_blue' :
+                $lg =2;
                 break;
         }
+
+        $start = '<div class="col-md-6 col-lg-'.$lg.' col-xlg-3">'
+                . '<div class="card card-hover">'
+                . '<div class="box '.$widget->type.' text-center">';
+
+        $content = '<h1 class="font-light text-white"><i class="'.$meteo->icon.'"></i></h1>'
+                . '<h6 class="text-white">'.$meteo->city.'</h6>'
+                . '<span class="temp">'.$meteo->temp.' ° ~  '.$meteo->description.'</span>';
+
+        $end = '</div><code>'.$widget->name.'</code></div></div>';
 
         return $start.$content.$end;
     }
@@ -67,46 +71,6 @@ class WidgetHelper
         if ($active === true) $widgets-> where('enable', 1);
 
         return $widgets->get();
-    }
-
-    /**
-     * Modèle _small
-     * @return string
-     */
-    private static function _small(){
-        return '<div>Ceci est un widget _small</div>';
-    }
-
-    /**
-     * Modèle _medium
-     * @return string
-     */
-    private static function _medium(){
-        return '<div>Ceci est un widget _medium</div>';
-    }
-
-    /**
-     * Modèle _large
-     * @return string
-     */
-    private static function _large(){
-        return '<div>Ceci est un widget _large</div>';
-    }
-
-    /**
-     * Modèle _vertical
-     * @return string
-     */
-    private static function _vertical(){
-        return '<div>Ceci est un widget _vertical</div>';
-    }
-
-    /**
-     * Modèle _horizontal
-     * @return string
-     */
-    private static function _horizontal(){
-        return '<div>Ceci est un widget _horizontal</div>';
     }
 
 }
