@@ -35,13 +35,18 @@ class MainController extends Controller
          * _horizontal
          * _vertical
          */
-        $widget = WidgetHelper::createWidget($meteo, '_vertical');
+        $widgetsActifs = WidgetHelper::getWidgets(true);
+        $widgets = [];
 
+        foreach ($widgetsActifs as $widget) {
+            $w = WidgetHelper::createWidget($meteo, $widget->type);
+            $widgets[] = $w;
+        }
 
         return view('widgets', [
             'title' => 'Widgets',
             'meteo' =>$meteo,
-            'widget' => $widget
+            'widgets' => $widgets
         ]);
     }
 

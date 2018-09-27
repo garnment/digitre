@@ -20,11 +20,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootsnav.css"/>
 
-    <link rel="stylesheet" href="css/style.css"/>
+
     <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Open Weather Map -->
     <link rel="stylesheet" href="css/weather-icons.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
 
     <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
