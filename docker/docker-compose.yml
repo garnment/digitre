@@ -1,0 +1,43 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: app.docker
+    working_dir: /var/www
+    volumes:
+      - ../project/:/var/www
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+      - "UID=1000"
+      - "GID=1000"
+    user: "1000:1000"
+
+  web:
+    build:
+      context: ./
+      dockerfile: web.docker
+    working_dir: /var/www
+    volumes_from:
+      - app
+    environment:
+      - "UID=1000"
+      - "GID=1000"
+    ports:
+      - "80:80"
+
+
+  database:
+    image: mysql:5.7
+    volumes:
+      - ../database/:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=digitre"
+      - "MYSQL_USER=root"
+      - "MYSQL_PASSWORD=root"
+      - "MYSQL_ROOT_PASSWORD=root"
+    ports:
+      - "3306:3306"
+
