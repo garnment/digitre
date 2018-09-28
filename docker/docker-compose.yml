@@ -8,6 +8,8 @@ services:
     working_dir: /var/www
     volumes:
       - ../project/:/var/www
+    links:
+      - database:db
     environment:
       - "DB_PORT=3306"
       - "DB_HOST=database"
@@ -31,12 +33,10 @@ services:
 
   database:
     image: mysql:5.7
-    volumes:
-      - ../database/:/var/lib/mysql
     environment:
       - "MYSQL_DATABASE=digitre"
-      - "MYSQL_USER=root"
-      - "MYSQL_PASSWORD=root"
+      - "MYSQL_USER=admin"
+      - "MYSQL_PASSWORD=admin"
       - "MYSQL_ROOT_PASSWORD=root"
     ports:
       - "3306:3306"

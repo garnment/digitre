@@ -2,11 +2,303 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9978d859-0b36-4037-9fa3-a3e7099a01be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/digitre.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/auto.cnf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ca-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ca.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/client-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/client-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/migrations.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/migrations.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/password_resets.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/password_resets.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/users.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/users.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/widgets.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/digitre/widgets.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ib_buffer_pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ib_logfile0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ib_logfile1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ibdata1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/columns_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/columns_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/columns_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/db.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/db.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/db.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/engine_cost.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/engine_cost.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/event.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/event.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/event.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/func.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/func.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/func.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/general_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/general_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/general_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/gtid_executed.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/gtid_executed.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_category.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_category.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_keyword.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_keyword.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_relation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_relation.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_topic.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/help_topic.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/innodb_index_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/innodb_index_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/innodb_table_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/innodb_table_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/ndb_binlog_index.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/ndb_binlog_index.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/ndb_binlog_index.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/plugin.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/plugin.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proc.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proc.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proc.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/procs_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/procs_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/procs_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proxies_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proxies_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proxies_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/server_cost.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/server_cost.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/servers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/servers.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slave_master_info.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slave_master_info.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slave_relay_log_info.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slave_relay_log_info.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slave_worker_info.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slave_worker_info.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slow_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slow_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/slow_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/tables_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/tables_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/tables_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_leap_second.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_leap_second.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_name.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_transition.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_transition.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_transition_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_transition_type.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/user.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/user.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/user.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/accounts.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/cond_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_stages_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_by_digest.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_by_program.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_statements_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_transactions_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_summary_by_instance.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/events_waits_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/file_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/file_summary_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/file_summary_by_instance.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/global_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/global_variables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/host_cache.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/hosts.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/memory_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/memory_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/memory_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/memory_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/memory_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/metadata_locks.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/mutex_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/objects_summary_global_by_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/performance_timers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/prepared_statements_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_applier_configuration.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_applier_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_applier_status_by_coordinator.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_applier_status_by_worker.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_connection_configuration.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_connection_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_group_member_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/replication_group_members.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/rwlock_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/session_account_connect_attrs.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/session_connect_attrs.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/session_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/session_variables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/setup_actors.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/setup_consumers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/setup_instruments.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/setup_objects.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/setup_timers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/socket_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/socket_summary_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/socket_summary_by_instance.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/status_by_account.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/status_by_host.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/status_by_thread.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/status_by_user.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/table_handles.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/table_io_waits_summary_by_index_usage.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/table_io_waits_summary_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/table_lock_waits_summary_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/threads.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/user_variables_by_thread.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/users.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/performance_schema/variables_by_thread.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/private_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/public_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/server-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/server-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/host_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/host_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/host_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/host_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/host_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/host_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/innodb_buffer_stats_by_schema.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/innodb_buffer_stats_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/innodb_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/io_by_thread_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/io_global_by_file_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/io_global_by_file_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/io_global_by_wait_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/io_global_by_wait_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/latest_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/memory_by_host_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/memory_by_thread_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/memory_by_user_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/memory_global_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/memory_global_total.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/metrics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/processlist.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/ps_check_lost_instrumentation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_auto_increment_columns.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_index_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_object_overview.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_redundant_indexes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_table_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_table_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_table_statistics_with_buffer.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_tables_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/schema_unused_indexes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/session.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/session_ssl_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/statement_analysis.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/statements_with_errors_or_warnings.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/statements_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/statements_with_sorting.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/statements_with_temp_tables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/sys_config.TRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/sys_config.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/sys_config.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/sys_config_insert_set_user.TRN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/sys_config_update_set_user.TRN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/user_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/user_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/user_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/user_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/user_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/user_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/version.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/wait_classes_global_by_avg_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/wait_classes_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/waits_by_host_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/waits_by_user_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/waits_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024host_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024host_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024host_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024host_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024host_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024host_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024innodb_buffer_stats_by_schema.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024innodb_buffer_stats_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024innodb_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024io_by_thread_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024io_global_by_file_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024io_global_by_file_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024io_global_by_wait_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024io_global_by_wait_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024latest_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024memory_by_host_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024memory_by_thread_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024memory_by_user_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024memory_global_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024memory_global_total.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024processlist.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024ps_digest_avg_latency_distribution.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024ps_schema_table_statistics_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024schema_flattened_keys.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024schema_index_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024schema_table_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024schema_table_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024schema_table_statistics_with_buffer.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024schema_tables_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024session.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024statement_analysis.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024statements_with_errors_or_warnings.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024statements_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024statements_with_sorting.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024statements_with_temp_tables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024user_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024user_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024user_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024user_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024user_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024user_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024wait_classes_global_by_avg_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024wait_classes_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024waits_by_host_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024waits_by_user_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys/x@0024waits_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.env" beforeDir="false" afterPath="$PROJECT_DIR$/project/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.gitignore.bak" beforeDir="false" afterPath="$PROJECT_DIR$/project/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/database/seeds/WidgetsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/WidgetsTableSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +313,11 @@
     <session id="-1189891417">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,55 +326,59 @@
           <entry key="bash_history" value="1" />
           <entry key="conf" value="3" />
           <entry key="docker" value="3" />
-          <entry key="env" value="2" />
-          <entry key="gitignore" value="2" />
+          <entry key="env" value="3" />
+          <entry key="gitignore" value="3" />
           <entry key="json" value="1" />
           <entry key="lock" value="1" />
           <entry key="log" value="1" />
           <entry key="md" value="4" />
-          <entry key="php" value="8" />
-          <entry key="yml" value="3" />
+          <entry key="php" value="11" />
+          <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="2" />
+          <entry key=".env file" value="3" />
           <entry key="Dockerfile" value="3" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="4" />
-          <entry key="PHP" value="8" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PHP" value="11" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="SmartyConfig" value="3" />
-          <entry key="YAML" value="3" />
+          <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="20" />
           <entry key="conf" value="39" />
+          <entry key="env" value="8" />
+          <entry key="gitignore" value="3" />
           <entry key="md" value="709" />
-          <entry key="php" value="67" />
-          <entry key="yml" value="57" />
+          <entry key="php" value="136" />
+          <entry key="yml" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key=".env file" value="8" />
           <entry key="Dockerfile" value="20" />
           <entry key="Markdown" value="709" />
-          <entry key="PHP" value="67" />
+          <entry key="PHP" value="136" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="SmartyConfig" value="39" />
-          <entry key="YAML" value="57" />
+          <entry key="YAML" value="70" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/.gitignore">
+        <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="295">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -101,10 +398,12 @@
       <list>
         <option value="$PROJECT_DIR$/docker/nginx/Dockerfile" />
         <option value="$PROJECT_DIR$/docker/nginx/site.conf" />
-        <option value="$PROJECT_DIR$/docker/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/project/database/seeds/WidgetsTableSeeder.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/project/.gitignore" />
+        <option value="$PROJECT_DIR$/project/.env" />
+        <option value="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/project/database/seeds/WidgetsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/docker/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -208,7 +507,7 @@
             <path>
               <item name="digitre" type="b2602c69:ProjectViewProjectNode" />
               <item name="digitre" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -251,17 +550,20 @@
       <updated>1538093265731</updated>
       <workItem from="1538093266828" duration="3886000" />
       <workItem from="1538097408073" duration="1704000" />
-      <workItem from="1538099384415" duration="372000" />
+      <workItem from="1538099384415" duration="925000" />
+      <workItem from="1538138506764" duration="322000" />
+      <workItem from="1538142340675" duration="1109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5962000" />
+    <option name="totallyTimeSpent" value="7946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,7 +576,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4461046" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38740662" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -302,16 +604,6 @@
     <entry file="file://$PROJECT_DIR$/project/database/factories/ModelFactory.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/database/seeds/WidgetsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/database/migrations/2018_09_27_125917_create_widgets_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker/vhost.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -325,13 +617,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/app/Helpers/WidgetHelper.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -351,9 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -364,10 +646,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../_test_tech/digitre/docker/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///run/media/garnment/DATA/DAVID/MAJ_DIGIT_RE/docker/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/database/migrations/2018_09_27_125917_create_widgets_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/database/seeds/WidgetsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

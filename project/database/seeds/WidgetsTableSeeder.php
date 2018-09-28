@@ -11,10 +11,32 @@ class WidgetsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'enable' => 1,
-            'type' => '_brown',
-            'name' => 'Aventure'
+        DB::table('widgets')->insert([
+            [
+                'enable' => 1,
+                'type' => '_brown',
+                'name' => 'Aventure',
+            ],
+            [
+                'enable' => 1,
+                'type' => '_green',
+                'name' => 'Nature',
+            ],
+            [
+                'enable' => 1,
+                'type' => '_yellow',
+                'name' => 'Sun Shine',
+            ],
+            [
+                'enable' => 1,
+                'type' => '_red',
+                'name' => 'Bloody Mary',
+            ],
+            [
+                'enable' => 1,
+                'type' => '_blue',
+                'name' => 'Ocean',
+            ]
         ]);
     }
 }
