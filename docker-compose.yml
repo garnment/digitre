@@ -3,11 +3,11 @@ version: '2'
 services:
   app:
     build:
-      context: ./config-docker
-      dockerfile: app.docker
+      context: ./docker
+    container_name: digit-app
     working_dir: /var/www
     volumes:
-      - ./web:/var/www
+      - ./www:/var/www
     links:
       - database:db
     environment:
@@ -19,8 +19,7 @@ services:
 
   web:
     build:
-      context: ./config-docker
-      dockerfile: web.docker
+      context: ./docker
     working_dir: /var/www
     volumes_from:
       - app

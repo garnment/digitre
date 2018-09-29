@@ -1,33 +1,40 @@
 # Test technique weather dashboard
 
-## Installation
+## Installation sous Linux :
 
 1- Cloner les sources du projet en local :
 <pre>git clone https://github.com/garnment/digitre.git</pre>
 
----
-**Remarque importante !** 
-Pour les utilisateurs de Windows, assurez-vous de cloner le projet dans le répertoire C:/users/nom_utilisateur pour pouvoir utiliser Docker plus facilement.
----
 
 2- Se placer à la racine du répertoire `digitre` et lancer les commandes suivantes
-**Pour les utilisateurs de Windows, utilisez le Docker Quickstart Terminal**
-<pre>docker-compose down</pre> 
-<pre>docker-compose up --force-recreate --build -d</pre>
-pour stopper d'éventuels containers en cours et forcer leur re-création
+<pre>docker-compose up -d</pre>
 
-3- Lancez ensuite les commandes suivantes pour initialiser la base de données
+3- Lancez ensuite les commandes suivantes pour initialiser la base de données (uniquement au premier lancement)
 <pre>
-docker exec -ti digitre_app_1 bash
+docker exec -ti digit-app bash
 php artisan migrate
 php artisan db:seed
 </pre>
+Pour relancer l'application après un `docker-compose down` il suffira simplement de lancer `docker-compose up -d`
 
-3- Le projet est accessible à :
+4- Le projet est accessible à  :
 <pre>
-`http://localhost` sous Linux
-`http://168.168.99.100' = remplacer par l'ip de votre VM sous Windows
+http://localhost
 </pre>
 
 5- Pour stopper les container, tapez 
 <pre>docker-compose down</pre>
+
+
+## Installation sous Windows :
+
+1- Télécharger UwAmp à l'adresse suivante : 
+https://www.uwamp.com/file/UwAmp.zip
+
+2- Décompressez l'archive dans le répertoire de votre choix.
+
+3- Cloner les sources du projet dans le répertoire `www` du dossier UwAmp que vous venez de décompresser.
+<pre>git clone https://github.com/garnment/digitre.git</pre>
+
+
+
