@@ -36,5 +36,15 @@ https://www.uwamp.com/file/UwAmp.zip
 3- Cloner les sources du projet dans le répertoire `www` du dossier UwAmp que vous venez de décompresser.
 <pre>git clone https://github.com/garnment/digitre.git</pre>
 
-
+4- Editer le fichier de configuration Appache du votre répertoire UwAmp `\UwAmp\bin\apache\conf\httpd_uwamp.conf`et ajouter les lignes suivantes à la fin du fichier :
+<pre>
+<VirtualHost *:8080>
+	DocumentRoot "{DOCUMENTPATH}/digitre/www/public/"
+	<Directory "{DOCUMENTPATH}/digitre/www/public/">
+		AllowOverride All
+		Options FollowSymLinks Indexes 
+		{ONLINE_MODE}		
+	</Directory>
+</VirtualHost>
+</pre>
 
