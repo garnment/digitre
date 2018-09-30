@@ -28,7 +28,7 @@ class MainController extends Controller
         $meteo->city=$meteo->name;
         $meteo->temp=round($meteo->main->temp);
         $meteo->description=$meteo->weather[0]->description;
-        $meteo->icon=$this->meteo->convertIcon($meteo->weather[0]->id);
+        $meteo->icon=$this->meteo->convertIcon($meteo);
 
         /**
          * On récupère tous les widgets actifs

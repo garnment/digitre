@@ -19,3 +19,6 @@ mysql -uroot -padmin
 exit
 php artisan database:create glop
 exit
+php artisan migrate
+php artisan db:seed
+exit

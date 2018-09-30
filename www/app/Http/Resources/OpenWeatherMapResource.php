@@ -22,18 +22,45 @@ class OpenWeatherMapResource
         return json_decode($json->body);
     }
 
-    public function convertIcon($code){
+    public function convertIcon($meteo){
 
-        $prefix = 'wi wi-';
+
+        $code = $meteo->weather[0]->id;
+
+        $prefix = 'wi wi-'; // Prefixe css
         $file = storage_path() . "/json/OpenWeatherMapIcons.json";
         $weatherIcons = json_decode(file_get_contents($file), true);
-        $icon = $weatherIcons[$code]['icon'] ;
 
-        // Si pas dans les plages mentionnées, on ajoute le préfixe day / night.
-        if ( ! ($code >  699  && $code <  800 ) &&  ! ($code >  899  && $code <  1000 )) {
-            $icon =  'day-'.$icon;
+        $date = new  \DateTime();
+        $timestamp = $date->getTimestamp();
+
+        /* Variables de test */
+        //$timestamp = 1538286099; // jour
+        //$timestamp = 1538286051; // nuit
+        //$code = 962;
+        /**/
+
+        $day = $meteo->sys->sunrise;
+        $night = $meteo->sys->sunset;
+
+        // On détermine s'il fait jour ou nuit pour
+        if ($timestamp >= $day && $timestamp <= $night){
+            $j = 'day';
+        } else {
+            $j = 'night';
         }
-        return $prefix.$icon;
+
+
+        // Si clef day ou night absente, on utilise la clef neutral
+        if ( array_key_exists($j, $weatherIcons[$code]['icon']) ) {
+            $icon = '-'.$weatherIcons[$code]['icon'][$j];
+        } else {
+            $icon = $weatherIcons[$code]['icon']['neutral'];
+            $j='';
+        }
+
+
+        return $prefix.$j.$icon;
     }
 
 }
