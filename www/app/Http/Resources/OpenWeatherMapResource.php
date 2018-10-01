@@ -28,7 +28,7 @@ class OpenWeatherMapResource
         $code = $meteo->weather[0]->id;
 
         $prefix = 'wi wi-'; // Prefixe css
-        $file = storage_path() . "/app/OpenWeatherMap/iconsReferences.json";
+        $file = storage_path() . "/app/public/OpenWeatherMap/iconsReferences.json";
         $weatherIcons = json_decode(file_get_contents($file), true);
 
         $date = new  \DateTime();
