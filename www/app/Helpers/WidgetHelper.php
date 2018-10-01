@@ -1,6 +1,7 @@
 <?php
-namespace App\Helpers\WidgetHelper;
+namespace App\Helpers;
 
+use App\Helpers\MustacheHelper;
 use App\Models\WidgetModel as WidgetModel;
 use Collective\Html\FormFacade as Form;
 
@@ -15,37 +16,14 @@ class WidgetHelper
      */
     public static function createWidget($meteo, $widget){
 
-        $lg=2;
+        $getVariables = MustacheHelper::getVariables($widget->html);
+        $variables = [];
 
-        switch ($widget->type) {
-            case '_brown' :
-                $lg = 2;
-                break;
-            case '_green' :
-                $lg = 4;
-                break;
-            case '_yellow' :
-                $lg = 2;
-                break;
-            case '_red' :
-                $lg =3;
-                break;
-            case '_blue' :
-                $lg =2;
-                break;
+        foreach($getVariables as $variable){
+            $variables['{{'.$variable.'}}']=eval("return $variable;");
         }
-
-        $start = '<div class="col-md-6 col-lg-'.$lg.' col-xlg-3">'
-                . '<div class="card card-hover">'
-                . '<div class="box '.$widget->type.' text-center">';
-
-        $content = '<h1 class="font-light text-white"><i class="'.$meteo->icon.'"></i></h1>'
-                . '<h6 class="text-white">'.$meteo->city.'</h6>'
-                . '<span class="temp">'.$meteo->temp.' ° ~  '.$meteo->description.'</span>';
-
-        $end = '</div><code>'.$widget->name.'</code></div></div>';
-
-        return $start.$content.$end;
+        $w = strtr($widget->html, $variables);
+        return $w;
     }
 
     /**
@@ -74,6 +52,7 @@ class WidgetHelper
     public static function getWidgets($active=false){
         $widgets = WidgetModel::query();
         if ($active === true) $widgets-> where('enable', 1);
+        $widgets->orderBy('order','ASC');
 
         return $widgets->get();
     }

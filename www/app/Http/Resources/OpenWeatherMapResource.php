@@ -18,7 +18,7 @@ class OpenWeatherMapResource
     
     public function getMeteo()
     {
-        $json = Laracurl::get($this->OWM_URL.'?id='.$this->OWM_ID_CITY.'&units=metric&APPID='.$this->OWM_API_KEY);
+        $json = Laracurl::get($this->OWM_URL.'?id='.$this->OWM_ID_CITY.'&units=metric&lang=fr&&appid='.$this->OWM_API_KEY);
         return json_decode($json->body);
     }
 
@@ -28,7 +28,7 @@ class OpenWeatherMapResource
         $code = $meteo->weather[0]->id;
 
         $prefix = 'wi wi-'; // Prefixe css
-        $file = storage_path() . "/json/OpenWeatherMapIcons.json";
+        $file = storage_path() . "/app/OpenWeatherMap/iconsReferences.json";
         $weatherIcons = json_decode(file_get_contents($file), true);
 
         $date = new  \DateTime();

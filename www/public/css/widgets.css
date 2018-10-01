@@ -1,13 +1,103 @@
-.card-hover {
-    border: 1px solid  #cccccc;
+/*
+OPEN WEATHER OVERRIDES
+*/
+
+/* widget right */
+.widget {
+margin: 8px;
+}
+
+.widget > h6 {
+    padding: 3px;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-bottom: 15px;
 }
 
 
-.temp {
-    color: #ffffff;
+.weather-right--blue {
+    background-image: -webkit-linear-gradient(bottom right, #ffffff, #ffffff);
+    background-image: linear-gradient(to top left, #ffffff, #ffffff);
+
 }
 
-code {
-    padding: 5px;
-    color: rgba(64, 64, 64, 0.69);
+.widget-right--blue {
+    background-image: -webkit-linear-gradient(top, #1a759c, #27a9e3) ;
+    background-image: linear-gradient(to bottom, #1a759c, #27a9e3);
 }
+
+
+.weather-right--classic {
+    width: 390px;
+}
+
+.widget-right--type5 .widget-right__layout--blue {
+    background-image: -webkit-linear-gradient(top, #27a9e3, #ffffff) ;
+    background-image: linear-gradient(to bottom, #27a9e3, #ffffff);
+}
+
+h2.widget-right__title {
+    max-width: 170px;
+}
+
+
+.widget-right__icon {
+    position: absolute;
+    display: block;
+    left: 60%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.weather-right-card__item:first-child {
+    border-right-color: #27a9e3;
+}
+
+.widget-right__text{
+    height: 90px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.weather-right__picto {
+     color: #fff;
+     font-size: 5em;
+ }
+
+.weather-right__picto.type5{
+    color: #333333;
+    font-size: 3em;
+    padding: 15px;
+}
+
+/* widget left */
+.widget-left-menu--blue {
+    background-image: -webkit-linear-gradient(top, #27a9e3, #ffffff) ;
+    background-image: linear-gradient(to bottom, #27a9e3, #ffffff);
+}
+
+.widget-left-menu--blue .widget-left-menu__layout {
+    border-bottom: 2px solid #27a9e3;
+
+}
+
+.weather-left__picto {
+    color: #27a9e3;
+    font-size: 6em;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+.weather-left__picto.little {
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+

@@ -12,14 +12,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <title>Weather Dashboard - @yield('title')</title>
 
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <link href="css/style.min.css" rel="stylesheet">
 
     <!-- Open Weather Map -->
-    <link rel="stylesheet" href="css/weather-icons.min.css"/>
+    <link rel="stylesheet" href="css/weather-icons.css"/>
 
     <!-- CUSTOM -->
     <link rel="stylesheet" href="css/custom.css"/>
-    <link rel="stylesheet" href="@yield('css')"/>
+    @yield('css')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,11 +56,12 @@
             </div>
             <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
 
-                <ul class="navbar-nav float-left mr-auto">
+                <ul class="navbar-nav float-left">
                     <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
                 </ul>
-                <a class="navbar-brand" href="/">
-                    <img src="../images/logo.png" alt="digitRE" class="logo" />
+
+                <a class="navbar-brand" href="/" title="Weather Dashboard">
+                    <img src="../images/logo.png" alt="Weather Dashboard" class="logo" />
                 </a>
                 <h1>Weather Dashboard </h1>
 
@@ -90,6 +92,11 @@
             <div class="row">
                 <div class="col-12 d-flex no-block align-items-center">
                     <h2 class="page-title">@yield('title')</h2>
+                    @if (session('update'))
+                        <div class="alert alert-success alert-dismissable custom-success-box" style="margin: 15px;">
+                            <strong> {{ session('update') }} </strong>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -101,12 +108,14 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
-                            <div>@yield('content')</div>
+                            <div class="row">@yield('content')</div>
                         </div>
                     </div>
             </div>
 
         </div>
+
+    </div>
 
     </div>
 
@@ -123,7 +132,7 @@
 <script src="js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="js/custom.min.js"></script>
-    <script src=@yield('scripts')></script>
+<script src=@yield('scripts')></script>
 
 </body>
 </html>

@@ -1,6 +1,9 @@
 @extends('layouts.main')
 @section('title', $title)
-@section('css', 'css/settings.css')
+
+@section('css')
+    <link rel="stylesheet" href="css/settings.css"/>
+@endsection
 
 @section('content')
     <div id="widgetsForm">
@@ -10,12 +13,11 @@
                 @foreach ( $widgets as $widget )
                     <div>{!!  $widget !!}</div>
             @endforeach
-            {!! Form::submit('Update', array('class' => 'btn btn-primary')) !!}
+            {!! Form::submit('Confirmer', array('class' => 'btn btn-primary')) !!}
             {!! Form::close() !!}
 
         </fieldset>
     </div>
 @endsection
-
 
 @section('scripts', 'js/custom/settings.js')

@@ -1,3 +1,12 @@
+html[dir="ltr"] body .p-t-30 {
+    padding-top: 12px;
+}
+
+.navbar-brand {
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
 h1 {
     color: ghostwhite;
 }
@@ -6,22 +15,11 @@ img.logo {
     max-height: 65px;
 }
 
-
-._brown {
-    background-color: #DD8500;
+.btn-primary {
+    background-color: #27a9e3; ;
+    border-color: #1A759C; ;
 }
 
-._green {
-    background-color: #28B779;
-}
-
-._yellow {
-    background-color: #F9DE20;
-}
-._red {
-    background-color: #D25226;
-}
-
-._blue {
-    background-color: #1B98CD;
+.btn-primary:hover, .btn-primary.focus,  .btn-primary:focus, btn-primary.active, btn-primary:active {
+    background-color: #1A759C; !important;
 }

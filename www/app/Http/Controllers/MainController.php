@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Helpers\WidgetHelper\WidgetHelper;
+use App\Helpers\WidgetHelper;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\OpenWeatherMapResource as OpenWeatherMapResource;
 use App\Models\WidgetModel;
@@ -26,7 +26,19 @@ class MainController extends Controller
         $meteo =$this->meteo->getMeteo();
 
         $meteo->city=$meteo->name;
-        $meteo->temp=round($meteo->main->temp);
+        $meteo->country=$meteo->sys->country;
+
+        $meteo->wind=round(($meteo->wind->speed)*3.6).' km/h'; // On convertit en km/h
+
+        $meteo->humidity=$meteo->main->humidity;
+        $meteo->pressure=$meteo->main->pressure;
+
+        $meteo->temp=round($meteo->main->temp); // On arrondit
+
+        $meteo->temp_min=round($meteo->main->temp_min); // On arrondit
+        $meteo->temp_max=round($meteo->main->temp_max); // On arrondit
+
+        $meteo->main=$meteo->weather[0]->main;
         $meteo->description=$meteo->weather[0]->description;
         $meteo->icon=$this->meteo->convertIcon($meteo);
 
@@ -84,7 +96,8 @@ class MainController extends Controller
             $widget->save();
        };
 
-       return redirect('/');
+
+       return redirect()->route('widgets')->with('update', 'Vos paramètres ont été mis à jour.');
     }
 
 }

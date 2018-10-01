@@ -1,0 +1,43 @@
+[
+
+  {
+    "name": "Classic",
+    "enable": 1,
+    "type": "",
+    "order": 1,
+    "html": "classic"
+  },
+
+  {
+    "name": "Medium",
+    "enable": 1,
+    "type": "",
+    "order": 2,
+    "html": "medium"
+  },
+
+  {
+    "name": "Compact",
+    "enable": 1,
+    "type": "",
+    "order": 3,
+    "html": "compact"
+  },
+
+  {
+    "name": "Vertical",
+    "enable": 1,
+    "type": "",
+    "order": 4,
+    "html": "vertical"
+  },
+
+  {
+    "name": "Horizontal",
+    "enable": 1,
+    "type": "",
+    "order": 5,
+    "html": "horizontal"
+  }
+
+]

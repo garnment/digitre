@@ -12,8 +12,8 @@
 */
 
 /* Page home */
-$router->get('/', 'MainController@showWidgets');
+$router->get('/', 'MainController@showWidgets')->name('widgets');
 
 /* Page settings */
-$router->get('/settings','MainController@showSettings');
-$router->post('/settings/update','MainController@updateSettings');
+$router->get('/settings','MainController@showSettings')->name('showSettings');
+$router->post('/settings/update','MainController@updateSettings')->name('updateSettings');
