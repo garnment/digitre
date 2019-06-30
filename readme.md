@@ -1,5 +1,17 @@
 # Test technique weather dashboard
 
+## Sujet :
+Weather Dashboard
+Build a Weather Dashboard Web Application using the OpenWeatherMap API (http://www.openweathermap.com).
+The App should have two pages:
+The Home page, displaying the list of the user’s weather widgets.
+Each widget displays at least the name of the city, the current temperature in Celsius and an icon of the weather (http://erikflower
+s.github.io/weather-icons/)
+The Settings page, which purpose is to edit the content of the Home page.
+The user can "Add" and "Remove" weather widgets.
+You are free to increase the features, create the design, deploy the app, etc, but the use of PHP as main language is mandatory.
+You must at least write the code and the technical documentation.
+
 ## Installation sous Linux :
 
 1- Cloner les sources du projet en local :
