@@ -8,8 +8,7 @@ Build a Weather Dashboard Web Application using the OpenWeatherMap API (http://w
 The App should have two pages:
 
 The Home page, displaying the list of the user’s weather widgets.
-Each widget displays at least the name of the city, the current temperature in Celsius and an icon of the weather (http://erikflower
-s.github.io/weather-icons/)
+Each widget displays at least the name of the city, the current temperature in Celsius and an icon of the weather (http://erikflowers.github.io/weather-icons/)
 
 The Settings page, which purpose is to edit the content of the Home page.
 
