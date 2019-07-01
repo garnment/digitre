@@ -41,7 +41,7 @@ Pour relancer l'application après un `docker-compose down` il suffira simplemen
 http://localhost
 </pre>
 
-5- Pour stopper les container, tapez 
+5- Pour stopper les containers, tapez 
 <pre>docker-compose down</pre>
 
 
