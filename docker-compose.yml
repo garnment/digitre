@@ -31,7 +31,7 @@ services:
 
 
   database:
-    image: mysql:5.7
+    image: mysql:latest
     volumes:
     - ./database:/var/lib/mysql
     environment:
