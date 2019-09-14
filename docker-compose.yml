@@ -3,7 +3,7 @@ version: '2'
 services:
   app:
     build:
-      context: ./docker
+      context: ./docker/php
     container_name: digit-app
     working_dir: /var/www
     volumes:
@@ -19,7 +19,7 @@ services:
 
   web:
     build:
-      context: ./docker
+      context: ./docker/nginx
     working_dir: /var/www
     volumes_from:
       - app
