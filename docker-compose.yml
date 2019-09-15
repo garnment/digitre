@@ -20,6 +20,7 @@ services:
   web:
     build:
       context: ./docker/nginx
+    container_name: digit-web
     working_dir: /var/www
     volumes_from:
       - app
@@ -29,9 +30,9 @@ services:
     ports:
       - "80:80"
 
-
   database:
-    image: mysql:latest
+    image: mysql:5.7
+    container_name: digit-database
     volumes:
     - ./database:/var/lib/mysql
     environment:
