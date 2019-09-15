@@ -25,7 +25,7 @@ You must at least write the code and the technical documentation.
 <pre>git clone https://github.com/garnment/digitre.git</pre>
 
 
-2- Se placer à la racine du répertoire `digitre` et lancer les commandes suivantes
+2- Se placer à la racine du répertoire `digitre` et lancer la commande suivante
 <pre>docker-compose up -d</pre>
 
 3- Lancez ensuite les commandes suivantes pour initialiser la base de données (uniquement au premier lancement)
