@@ -58,7 +58,7 @@ https://www.uwamp.com/file/UwAmp.zip
 4- Remplacer le répertoire `bin` de `UwAmp\bin` par le répertoire `bin` de `www\digitre\bin`.
 
 5- Editez le fichier digitre\www\.env
-et remplacez la constante <pre>DB_HOST=database<pre> par <pre>DB_HOST=127.0.0.1<pre>
+et remplacez la constante `DB_HOST=database` par `DB_HOST=127.0.0.1`
 
 5- Lancer `UwAmp.exe`
 
