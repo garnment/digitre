@@ -38,7 +38,7 @@ Pour relancer l'application après un `docker-compose down` il suffira simplemen
 
 4- Le projet est accessible à  :
 <pre>
-http://localhost
+http://localhost:8181
 </pre>
 
 5- Pour stopper les containers, tapez 
